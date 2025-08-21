@@ -16,6 +16,8 @@
   --color-2x-dark: #121212;
   --color-black: #000000;
 
+  --color-text-white: #ffffffde;
+
   --color-background-dark: #0d0d0d;
 
   --radius-xs: 4px;
@@ -50,13 +52,13 @@
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark light;
+  color: var(--color-text-white);
+  background-color: var(--color-background-dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
