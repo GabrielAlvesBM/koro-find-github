@@ -25,7 +25,7 @@
   --radius-md: 12px;
   --radius-lg: 24px;
 
-  --font-primary: 'Poppins', sans-serif;
+  --font-primary: system-ui, 'Poppins', sans-serif;
   --font-secondary: 'Open Sans', sans-serif;
 
   --text-2xs: 14px;

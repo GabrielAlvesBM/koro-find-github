@@ -1,5 +1,7 @@
+import { RootRouter } from './root.router';
+
 function App() {
-  return <h1>Find Github</h1>;
+  return <RootRouter />;
 }
 
 export default App;
