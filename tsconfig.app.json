@@ -28,6 +28,7 @@
     "paths": {
       "@/*": ["/*"],
       "@assets/*": ["assets/*"],
+      "@data/*": ["data/*"],
       "@atomic/*": ["atomic/*"]
     }
   },
