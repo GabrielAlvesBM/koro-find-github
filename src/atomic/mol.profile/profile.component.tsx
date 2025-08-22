@@ -1,4 +1,5 @@
 import { ProfileLinkButton } from '@atomic/atm.profile-link-button';
+import { Spinner } from '@atomic/atm.spinner';
 import type { GithubUser } from '@data/types/github-user';
 import { Status, type StatusType } from '@data/types/status';
 import { strings } from './profile.strings';
@@ -10,7 +11,7 @@ interface ProfileProps {
 
 export const Profile = (props: ProfileProps) => {
   if (props.status === Status.Idle) return;
-  if (props.status === Status.Loading) return <p>{Status.Loading}</p>;
+  if (props.status === Status.Loading) return <Spinner />;
   if (props.status === Status.Error) {
     return (
       <p className="text-feedback-danger-medium">{strings.errorMessage}</p>
@@ -42,6 +43,8 @@ const ProfileDetails = (props: ProfileDetailsProps) => {
         </ProfileLinkButton>
       </div>
       <dl className="flex flex-col gap-2xs max-w-[400px]">
+        <dt className="font-bold">{props.data.login}</dt>
+
         <div className="flex gap-3xs">
           <dt className="font-bold">{strings.userDetails.following}</dt>
           <dd>{props.data.following}</dd>
