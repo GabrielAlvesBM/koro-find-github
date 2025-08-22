@@ -2,7 +2,7 @@ export const strings = {
   userDetails: {
     following: 'Seguindo:',
     followers: 'Seguidores:',
-    publicRepos: 'Repositório públicos:',
+    publicRepos: 'Repositórios públicos:',
     bio: 'Bio:',
     emptyBio: 'Sem história para contar!',
   },
