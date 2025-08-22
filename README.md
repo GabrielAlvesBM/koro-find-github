@@ -1,5 +1,7 @@
 # Koro Find Github
 
+<img width="1312" height="761" alt="image" src="https://github.com/user-attachments/assets/79bb77b0-a01f-4e22-aa42-04ce14881d82" />
+
 ## 📝 Description
 
 Technical testing project for Koro. A github profile search page.
