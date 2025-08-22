@@ -43,6 +43,8 @@ const ProfileDetails = (props: ProfileDetailsProps) => {
         </ProfileLinkButton>
       </div>
       <dl className="flex flex-col gap-2xs max-w-[400px]">
+        <dt className="font-bold">{props.data.login}</dt>
+
         <div className="flex gap-3xs">
           <dt className="font-bold">{strings.userDetails.following}</dt>
           <dd>{props.data.following}</dd>
