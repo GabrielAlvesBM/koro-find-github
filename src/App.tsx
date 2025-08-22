@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center gap-md h-screen">
+    <main className="flex flex-col items-center justify-center gap-md min-h-screen py-md px-xs">
       <Profile data={userData} status={status} />
 
       <SearchForm
