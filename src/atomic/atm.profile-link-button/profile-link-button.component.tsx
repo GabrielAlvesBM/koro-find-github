@@ -9,9 +9,9 @@ interface ProfileLinkButtonProps {
 export const ProfileLinkButton = (props: ProfileLinkButtonProps) => {
   return (
     <a href={props.href} target="_blank">
-      <button className="flex items-center gap-2xs py-xs px-md rounded-md underline cursor-pointer border border-white bg-brand-primary-dark">
+      <button className="flex items-center gap-2xs py-xs px-md rounded-md underline break-all cursor-pointer border border-white bg-brand-primary-dark">
         {strings.github}
-        {props.children} <ArrowRight className="fill-text-white" />
+        {props.children} <ArrowRight className="shrink-0 fill-text-white" />
       </button>
     </a>
   );

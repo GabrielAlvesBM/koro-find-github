@@ -7,7 +7,7 @@ export const Input = (props: InputProps) => {
 
   return (
     <input
-      className="p-xs rounded-md text-lg border border-brand-primary-dark"
+      className="w-full p-xs rounded-md text-lg border border-brand-primary-dark"
       type="text"
       autoComplete="false"
       {...rest}
