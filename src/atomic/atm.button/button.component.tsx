@@ -1,10 +1,16 @@
-import type { ReactNode } from 'react';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 import { style } from './button.style';
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 
 export const Button = (props: ButtonProps) => {
-  return <button className={style()}>{props.children}</button>;
+  const { ...rest } = props;
+
+  return (
+    <button className={style()} {...rest}>
+      {props.children}
+    </button>
+  );
 };
