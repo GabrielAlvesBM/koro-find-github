@@ -30,7 +30,7 @@ interface ProfileDetailsProps {
 
 const ProfileDetails = (props: ProfileDetailsProps) => {
   return (
-    <div className="flex gap-xs">
+    <div className="flex flex-col gap-xs md:flex-row">
       <div className="flex flex-col items-center gap-xs">
         <img
           className="size-[250px] rounded-full"
@@ -43,7 +43,9 @@ const ProfileDetails = (props: ProfileDetailsProps) => {
         </ProfileLinkButton>
       </div>
       <dl className="flex flex-col gap-2xs max-w-[400px]">
-        <dt className="font-bold">{props.data.login}</dt>
+        <h1 className="text-xl text-center font-bold md:text-left">
+          {props.data.login}
+        </h1>
 
         <div className="flex gap-3xs">
           <dt className="font-bold">{strings.userDetails.following}</dt>
